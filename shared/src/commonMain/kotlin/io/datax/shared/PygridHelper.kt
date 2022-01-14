@@ -5,7 +5,7 @@ class PygridHelper(
     host: String?,
     authToken: String?,
     val modelName: String = "spotify_recommendation",
-    val modelVersion: String = "1.1",
+    val modelVersion: String = "1.2",
     val numOfParticipants: Int = 10,
     participantId: Int,
 ) : Changeable() {
