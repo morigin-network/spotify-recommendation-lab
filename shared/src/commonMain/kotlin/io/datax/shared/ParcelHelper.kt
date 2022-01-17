@@ -69,7 +69,7 @@ class ParcelHelper<R, D>(
     fun getAuthUrl(): String = openIDHelperDelegate.getUri(
         clientId = clientId ?: throw  Exception("No client ID set"),
         redirectUri = redirectUri,
-        scopes = listOf("openid", "profile", "email", "parcel.public", "parcel.safe", "parcel.full")
+        scopes = listOf("openid", "profile", "email", "parcel.public", "parcel.safe")
     )
 
     suspend fun handleAuthResult(fragment: String) = fragment
